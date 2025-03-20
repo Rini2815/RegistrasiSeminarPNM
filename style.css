@@ -1,0 +1,127 @@
+/* style.css */
+
+/* Gaya umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0ff; /* Biru muda */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #003366; /* Biru tua */
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #e6f0ff; /* Biru muda */
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+aside {
+    background-color: #ffffff; /* Putih */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+    color: #003366; /* Biru tua */
+}
+
+section {
+    background-color: #ffffff; /* Putih */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #003366; /* Biru tua */
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #0073e6; /* Biru */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #005bb5; /* Biru lebih tua */
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #0073e6; /* Biru */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #145494; /* Biru muda */
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #005bb5; /* Biru lebih tua */
+}
+
+.error {
+    color: #003366; /* Biru tua */
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #003366; /* Biru tua */
+    font-size: 14px;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside, section {
+        width: 100%;
+    }
+}

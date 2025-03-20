@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT PNM Summit - Registrasi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="image/logo.png" alt="Logo IT PNM Summit" width="100">
+        <h1>IT PNM Summit</h1>
+        <p>Registrasi Seminar Teknologi Nasional</p>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Informasi Seminar</h2>
+            <p><strong>Tanggal:</strong> 31 Maret 2025</p>
+            <p><strong>Lokasi:</strong> Politeknik Negeri Madiun Kampus 1 , Hall A</p>
+            <p><strong>Waktu:</strong> 09.00 - 13.00 WIB</p>
+            <p><strong>Pembicara:</strong></p>
+            <ul>
+                <li>Dr. Budi Utomo (Pimpinan Fakultas)</li>
+                <li>Ninis Ayu (Dosen IT PNM)</li>
+                <li>Prof. Rudi Setyobudi (Dosen TI PNM)</li>
+            </ul>
+            <p><strong>Topik Seminar:</strong></p>
+            <ul>
+                <li>Teknologi AI dan Masa Depan</li>
+                <li>Blockchain dan Keamanan Data</li>
+                <li>Pengembangan Aplikasi Berbasis Cloud</li>
+            </ul>
+            <p><strong>Fasilitas:</strong></p>
+            <ul>
+                <li>Sertifikat Peserta</li>
+                <li>Goodie Bag Eksklusif</li>
+            </ul>
+            <p><strong>Biaya Pendaftaran:</strong> Rp 45.000</p>
+            <p><strong>Contact Person:</strong></p>
+            <ul>
+                <li>Email: info@itpnmsummit.com</li>
+                <li>Telepon: +62 812 345 6789</li>
+            </ul>
+        </aside>
+
+        <section>
+            <form id="registrasiForm">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+                <small class="error" id="namaError">Nama harus minimal 3 karakter.</small>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                <small class="error" id="emailError">Format email tidak valid.</small>
+
+                <label for="telepon">Nomor Telepon</label>
+                <input type="tel" id="telepon" name="telepon" placeholder="+62 81234567890" required>
+                <small class="error" id="teleponError">Nomor telepon harus dalam format Indonesia (+62 atau 08).</small>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" required>
+                <small class="error" id="passwordError">Password harus minimal 8 karakter.</small>
+
+                <label for="confirm_password">Konfirmasi Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Konfirmasi password" required>
+                <small class="error" id="confirmPasswordError">Konfirmasi password tidak cocok.</small>
+
+                <label for="tanggal_lahir">Tanggal Lahir</label>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+                <small class="error" id="tanggalLahirError">Anda harus berusia minimal 17 tahun (lahir sebelum 2006).</small>
+
+                <button type="submit" id="submitButton" disabled>Daftar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 IT PNM Summit. All Rights Reserved.</p>
+        <p>Kontak: info@itpnmsummit.com | Telepon: +62 812 3456 789</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
